@@ -1,0 +1,218 @@
+:root {
+  --dark-color: #19283f;
+  --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --section-color: #eff7fa;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+ul {
+  list-style: none;
+}
+.main-btn {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.main-btn:hover {
+  color: #fff;
+  background-color: var(--green-color);
+}
+.main-title:after {
+  position: absolute;
+  content: "";
+  width: 120px;
+  height: 2px;
+  background-color: var(--green-color);
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* start navbar */
+.navbar {
+  background-color: var(--dark-color);
+}
+.navbar-brand {
+  color: #fff !important;
+  font-style: italic !important;
+  font-weight: bold;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--green-color);
+}
+.navbar .search {
+  border-left: 2px solid var(--green-color);
+}
+.navbar .search svg {
+  color: var(--green-color);
+}
+.navbar .navbar-toggler {
+  color: #fff;
+  border-color: #fff;
+  font-size: 20px;
+  border-radius: 5px;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar .navbar-toggler[aria-expanded="true"] {
+  border-color: var(--green-color);
+  color: var(--green-color);
+}
+/* end navbar */
+
+/* start landing */
+.landing {
+  background-color: var(--dark-color);
+  min-height: calc(100vh - 72px);
+}
+/* end landing */
+/* start features */
+.feature .icons-holder {
+  height: 200px;
+}
+.feature .icons-holder svg {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.feature .icons-holder .number {
+  color: var(--section-color);
+  font-size: 12rem;
+}
+.feature .icons-holder .icon {
+  color: var(--green-color);
+}
+.feature .feat h4 {
+  color: var(--yellow-color);
+}
+/* end features */
+/* start our-works */
+.our-works {
+  background-color: var(--section-color);
+}
+.our-works ul .active {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+  transition: 0.3s;
+}
+.our-works ul .active:hover {
+  color: #fff;
+  background-color: var(--green-color);
+}
+.our-works ul li {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.our-works ul li:not(.active):hover {
+  color: #ff3150;
+}
+.our-works .box {
+  overflow: hidden;
+  padding: 5px;
+}
+.our-works .box::before {
+  content: attr(data-work);
+  position: absolute;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  background-color: rgb(51 209 204 / 76%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  transition: 0.3s;
+  transform: translateX(calc(-100% - 5px));
+}
+.our-works .box:hover:before {
+  transform: translateX(0);
+}
+/* end our-works */
+/*  start stuff*/
+.stuff .description {
+  max-width: 400px;
+}
+/*  end stuff*/
+/*  start our-team*/
+.our-team {
+  background-color: var(--section-color);
+}
+.our-team h2 {
+  color: #ffc400;
+}
+.our-team .text {
+  font-weight: 500;
+}
+.our-team .box h4 {
+  background-color: var(--green-color);
+}
+/*  end our-team*/
+/* start project*/
+.project {
+  background-color: var(--dark-color);
+}
+.project p {
+  font-weight: 500;
+}
+/*  end project*/
+/*  start blog*/
+
+.blog span {
+  font-weight: 500;
+}
+/*  end blog*/
+/*  start sub*/
+.sub {
+  background-color: var(--yellow-color);
+}
+.sub input {
+  border: none;
+  border-bottom: 1px white solid;
+}
+.sub input:focus {
+  outline: none;
+}
+.sub input::placeholder {
+  color: white;
+}
+.sub .main-btn {
+  background-color: var(--dark-color);
+}
+/*  end sub*/
+/* start footer*/
+.footer {
+  background-color: var(--dark-color);
+}
+.footer .copyright > span {
+  color: var(--green-color);
+}
+.footer .copyright div span {
+  color: var(--yellow-color);
+}
+.footer .contact ul svg {
+  width: 20px;
+  height: 20px;
+}
+.footer .facebook {
+  background-color: #1877f2;
+}
+.footer .linkedin {
+  background-color: #0077b5;
+}
+.footer .twitter {
+  background-color: #1da1f2;
+}
+.footer .youtube {
+  background-color: #ff0000;
+}
+
+/*  end footer*/
